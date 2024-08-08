@@ -1,0 +1,35 @@
+
+
+body{
+ font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+}
+.navbar-custom {
+    background-color: #343a40; 
+   
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+    margin-left: 15%;
+    max-width: 1400px;
+    margin-right: 15%;
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; 
+}
+.extra-space {
+    margin-top: 250px;}
+   
+    .carousel-inner img {
+        width: 100%;
+        height: 600px; 
+        object-fit: cover; /* Esto recorta la imagen para que se ajuste al contenedor */
+    }
