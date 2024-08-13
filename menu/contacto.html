@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -23,24 +23,18 @@
                         <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Aranceles</a>
+                        <a class="nav-link" href="./Nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Clases
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./futbol.html">Futbol</a></li>
-                            <li><a class="dropdown-item" href="./boxeo.html">Boxeo</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="./danza.html">Danza</a></li>
-                            <li><a class="dropdown-item" href="./natacion.html">Natacion</a></li>
-                            <li><a class="dropdown-item" href="./gimnasio.html">gimnasio</a></li>
-                        </ul>
+                            <li><a class="dropdown-item" href="./horarios.html">Horarios</a></li>
+                            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                       </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
+                  
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -49,6 +43,48 @@
             </div>
         </div>
     </nav>
+    <div class="contactos">
+        <h2>CONTACTO</h2>
+        <form>
+            <div class="grupo-texto">
+                <div class="name-fields">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                </div>
+            </div>
+            <div>
+                <div class="grupo-dni">
+                    <input type="text" placeholder="DNI" required>
+                    <input type="text" placeholder="Teléfono" required>
+                </div>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label>¿Sos socio?</label>
+                <div class="socios">
+                    <label><input type="radio" name="socio" value="si"> SI</label>
+                    <label><input type="radio" name="socio" value="no" checked> NO</label>
+                </div>
+            </div>
+            <div>
+                <select required>
+                    <option value="">Motivo de contacto</option>
+                    <option value="opcion1">aranceles</option>
+                    <option value="opcion2">quiero hacer una consulta</option>
+                </select>
+            </div>
+
+            <div>
+                <textarea placeholder="Dejanos un comentario" rows="4" required></textarea>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+    
+    
+    
     <footer class="bg-light text-dark pt-5 pb-4">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
