@@ -153,3 +153,14 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #ccc;
 }
+.imagen-fondo{
+    background-image: url('/assets/img/nadador.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.nosotros{
+width:1000px;
+height: 500px;
+}
