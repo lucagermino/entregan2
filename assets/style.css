@@ -9,7 +9,6 @@
 .mi-animacion {
   animation-duration: 2s;
   animation-name: aparecer;
-  animation-iteration-count: infinite;
 }
 
 body {
