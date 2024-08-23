@@ -53,7 +53,9 @@ body {
   border-radius: 10px;
 }
 
-.hora, .dias, .class {
+.hora,
+.dias,
+.class {
   padding: 10px;
   text-align: center;
   border: 1px solid #4a4a66;
@@ -108,7 +110,9 @@ h2 {
   margin-bottom: 15px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 10px;
   background-color: #000;
@@ -124,12 +128,14 @@ textarea {
   height: 80px;
 }
 
-.name-fields, .grupo-dni {
+.name-fields,
+.grupo-dni {
   display: flex;
   justify-content: space-between;
 }
 
-.name-fields input, .grupo-dni input {
+.name-fields input,
+.grupo-dni input {
   width: 48%;
 }
 
@@ -170,6 +176,7 @@ button[type=submit]:hover {
 .nosotros {
   width: 1000px;
   height: 500px;
+  padding-left: 150px;
 }
 
 .img-carrusel {
@@ -185,15 +192,21 @@ button[type=submit]:hover {
 }
 
 .img2 {
-  background-image: url("../assets/img/nadador.png");
+  background-image: url("/assets/img/gimnasio.png");
 }
 
 .img3 {
-  background-image: url("../assets/img/nadador.png");
+  background-image: url("/assets/img/gimnasio.jpg");
 }
 
 .extra-space1 {
   margin-top: 40px;
+}
+
+.titulo {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
