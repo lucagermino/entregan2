@@ -15,7 +15,6 @@
     animation-name: aparecer;
 
 }
-
 body {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -188,12 +187,39 @@ button[type="submit"]:hover {
     background-attachment: fixed;
     color: white;
 }
+$fadein-time: 2s;
+$delay-title: 0s;
+$delay-subtitle: 1s;
+$delay-image: 2s;
 
-.nosotros {
-    width: 1000px;
-    height: 500px;
-   padding-left: 150px;
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
+.nosotros-imagen{
+    text-align: center;
+   
+}
+.nosotros {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    height: auto; 
+    height: 400px; 
+    animation: fadein
+     $fadein-time ease-in-out 
+     $delay-image forwards;
+     visibility: hidden;
+}
+
 
 .img-carrusel {
     width: 1400px;
@@ -223,4 +249,13 @@ button[type="submit"]:hover {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    opacity: 0;
+    animation: fadein $fadein-time ease-in-out $delay-title forwards;
 }
+.subtitulo{
+    text-align: center;
+    font-size: 1.8em;
+    opacity: 0;
+    animation: fadein $fadein-time ease-in-out $delay-subtitle forwards;
+}
+

@@ -173,10 +173,29 @@ button[type=submit]:hover {
   color: white;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.nosotros-imagen {
+  text-align: center;
+}
+
 .nosotros {
-  width: 1000px;
-  height: 500px;
-  padding-left: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  height: 400px;
+  animation: fadein 2s ease-in-out 2s forwards;
+  visibility: hidden;
 }
 
 .img-carrusel {
@@ -207,6 +226,15 @@ button[type=submit]:hover {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  opacity: 0;
+  animation: fadein 2s ease-in-out 0s forwards;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.8em;
+  opacity: 0;
+  animation: fadein 2s ease-in-out 1s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
