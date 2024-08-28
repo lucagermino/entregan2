@@ -1,0 +1,27 @@
+@keyframes aparecer {
+ 
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+@keyframes fadein {
+    from {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+.mi-animacion {
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+}

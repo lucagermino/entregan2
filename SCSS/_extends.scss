@@ -1,0 +1,17 @@
+%textcenter{
+    text-align: center;
+}
+.hora,
+.dias,
+.class {
+    padding: 10px;
+    @extend %textcenter ;
+    border: 1px solid $colorgris;
+    background-color: #666;
+}
+.nosotros-imagen,
+.titulo,
+.subtitulo,
+.contactos {
+  @extend %textcenter;
+}

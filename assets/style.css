@@ -6,9 +6,36 @@
     opacity: 1;
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .mi-animacion {
   animation-duration: 2s;
   animation-name: aparecer;
+}
+
+.nosotros-imagen,
+.titulo,
+.subtitulo,
+.contactos, .hora,
+.dias,
+.class {
+  text-align: center;
+}
+
+.hora,
+.dias,
+.class {
+  padding: 10px;
+  border: 1px solid #4a4a66;
+  background-color: #666;
 }
 
 body {
@@ -53,15 +80,6 @@ body {
   border-radius: 10px;
 }
 
-.hora,
-.dias,
-.class {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #4a4a66;
-  background-color: #666;
-}
-
 .hora {
   background-color: #333;
   font-weight: bold;
@@ -97,7 +115,6 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 400px;
-  text-align: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
@@ -173,20 +190,6 @@ button[type=submit]:hover {
   color: white;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    visibility: hidden;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.nosotros-imagen {
-  text-align: center;
-}
-
 .nosotros {
   display: block;
   margin-left: auto;
@@ -223,7 +226,6 @@ button[type=submit]:hover {
 }
 
 .titulo {
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   opacity: 0;
@@ -231,7 +233,6 @@ button[type=submit]:hover {
 }
 
 .subtitulo {
-  text-align: center;
   font-size: 1.8em;
   opacity: 0;
   animation: fadein 2s ease-in-out 1s forwards;

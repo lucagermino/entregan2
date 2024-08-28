@@ -1,32 +1,14 @@
-@keyframes aparecer {
-    0% {
-        opacity: 0;
 
-    }
-
-    100% {
-        opacity: 1;
-    }
-
-}
-
-.mi-animacion {
-    animation-duration: 2s;
-    animation-name: aparecer;
-
-}
+@import 'variables';
+@import 'animations';
+@import 'extends';
 body {
-
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
-
-
-
 }
 
 .navbar-custom {
     background-color: #343a40;
-
 }
 
 
@@ -59,19 +41,11 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1px;
-    background-color: #4a4a66;
+    background-color: $colorgris;
     border-radius: 10px;
-
 }
 
-.hora,
-.dias,
-.class {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #4a4a66;
-    background-color: #666;
-}
+
 
 .hora {
     background-color: #333;
@@ -79,13 +53,11 @@ body {
 }
 
 .dias {
-    background-color: #4a4a66;
-
-
+    background-color: $colorgris;
 }
 
 .clase {
-    background-color: #4a4a66;
+    background-color: $colorgris;
 }
 
 .clase:not(:empty) {
@@ -112,7 +84,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 400px;
-    text-align: center;
+   
     box-shadow: 0 0 10px rgba(260, 260, 260, 0.7);
 }
 
@@ -187,26 +159,13 @@ button[type="submit"]:hover {
     background-attachment: fixed;
     color: white;
 }
-$fadein-time: 2s;
-$delay-title: 0s;
-$delay-subtitle: 1s;
-$delay-image: 2s;
 
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    visibility: hidden;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.nosotros-imagen{
-    text-align: center;
+
+
+
    
-}
+
 .nosotros {
     display: block;
     margin-left: auto;
@@ -246,14 +205,14 @@ $delay-image: 2s;
 }
 
 .titulo{
-    text-align: center;
+   
     padding-top: 50px;
     padding-bottom: 50px;
     opacity: 0;
     animation: fadein $fadein-time ease-in-out $delay-title forwards;
 }
 .subtitulo{
-    text-align: center;
+    
     font-size: 1.8em;
     opacity: 0;
     animation: fadein $fadein-time ease-in-out $delay-subtitle forwards;
