@@ -90,6 +90,15 @@ body {
   overflow-y: auto;
 }
 
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.subtitulo {
+  font-size: 1.8em;
+}
+
 button[type=submit] {
   background-color: #fff;
   color: #000;
@@ -101,7 +110,6 @@ button[type=submit] {
   font-size: 16px;
   margin-top: 20px;
 }
-
 button[type=submit]:hover {
   background-color: #ccc;
 }
@@ -123,12 +131,10 @@ button[type=submit]:hover {
   width: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .card h3 {
   margin-bottom: 15px;
   font-size: 1.5em;
 }
-
 .card p {
   font-size: 1.1em;
 }
